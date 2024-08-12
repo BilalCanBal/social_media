@@ -1,0 +1,985 @@
+﻿<input type="hidden" id="userId" value="@ViewBag.User.Id" />
+<section>
+	<div class="gap2 gray-bg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="row merged20" id="page-contents">
+						<div class="col-lg-3">
+							<aside class="sidebar static left">
+								<div class="widget">
+									<h4 class="widget-title">Shortcuts</h4>
+									<ul class="naves">
+										<li>
+											<i class="ti-clipboard"></i>
+											<a href="/User/Index" title="">News feed</a>
+										</li>
+										<li>
+											<i class="ti-files"></i>
+											<a href="/account/profilePage" title="">My pages</a>
+										</li>
+										<li>
+											<i class="ti-user"></i>
+											<a href="/account/Friends" title="">Friends</a>
+										</li>
+										<li>
+											<i class="ti-comments-smiley"></i>
+											<a href="/Message/Index" title="">Messages</a>
+										</li>
+										<li>
+											<i class="ti-power-off"></i>
+											<a href="/Account/Login" title="">Logout</a>
+										</li>
+									</ul>
+								</div><!-- Shortcuts -->
+@* 								<div class="widget">
+									<h4 class="widget-title">Recent Activity</h4>
+									<ul class="activitiez">
+										<li>
+											<div class="activity-meta">
+												<i>10 hours Ago</i>
+												<span><a href="#" title="">Commented on Video posted </a></span>
+												<h6>by <a href="time-line.html">black demon.</a></h6>
+											</div>
+										</li>
+										<li>
+											<div class="activity-meta">
+												<i>30 Days Ago</i>
+												<span><a href="#" title="">Posted your status. “Hello guys, how are you?”</a></span>
+											</div>
+										</li>
+										<li>
+											<div class="activity-meta">
+												<i>2 Years Ago</i>
+												<span><a href="#" title="">Share a video on her timeline.</a></span>
+												<h6>"<a href="#">you are so funny mr.been.</a>"</h6>
+											</div>
+										</li>
+									</ul>
+								</div><!-- recent activites -->*@
+							</aside>
+						</div><!-- sidebar -->
+						<div class="col-lg-6">
+							<div class="loadMore">
+								<div class="central-meta item">
+									<div class="loadMore" id="postsContainer">
+
+									</div>
+								</div>
+								
+@* 								<div class="central-meta item">
+									<div class="user-post">
+										<div class="friend-info">
+											<figure>
+												<img alt="" src="~/Tamplate/images/resources/friend-avatar10.jpg">
+											</figure>
+											<div class="friend-name">
+												<ins><a title="" href="time-line.html">Janice Griffith</a></ins>
+												<span>published: june,2 2018 19:PM</span>
+											</div>
+											<div class="description">
+
+												<p>
+													Curabitur World's most beautiful car in <a title="" href="#">#test drive booking !</a> the most beatuiful car available in america and the saudia arabia, you can book your test drive by our official website
+												</p>
+											</div>
+											<div class="post-meta">
+												<div class="linked-image align-left">
+													<a title="" href="#"><img alt="" src="~/Tamplate/images/resources/page1.jpg"></a>
+												</div>
+												<div class="detail">
+													<span>Love Maid - ChillGroves</span>
+													<p>Lorem ipsum dolor sit amet, consectetur ipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... </p>
+													<a title="" href="#">www.sample.com</a>
+												</div>
+												<div class="we-video-info">
+													<ul>
+														<li>
+															<span class="views" data-toggle="tooltip" title="views">
+																<i class="fa fa-eye"></i>
+																<ins>1.2k</ins>
+															</span>
+														</li>
+														<li>
+															<span class="comment" data-toggle="tooltip" title="Comments">
+																<i class="fa fa-comments-o"></i>
+																<ins>52</ins>
+															</span>
+														</li>
+														<li>
+															<span class="like" data-toggle="tooltip" title="like">
+																<i class="ti-heart"></i>
+																<ins>2.2k</ins>
+															</span>
+														</li>
+														<li>
+															<span class="dislike" data-toggle="tooltip" title="dislike">
+																<i class="ti-heart-broken"></i>
+																<ins>200</ins>
+															</span>
+														</li>
+														<li class="social-media">
+															<div class="menu">
+																<div class="btn trigger"><i class="fa fa-share-alt"></i></div>
+																<div class="rotater">
+																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-html5"></i></a></div>
+																</div>
+																<div class="rotater">
+																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-facebook"></i></a></div>
+																</div>
+																<div class="rotater">
+																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-google-plus"></i></a></div>
+																</div>
+																<div class="rotater">
+																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-twitter"></i></a></div>
+																</div>
+																<div class="rotater">
+																	<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-css3"></i></a></div>
+																</div>
+																<div class="rotater">
+																	<div class="btn btn-icon">
+																		<a href="#" title=""><i class="fa fa-instagram"></i></a>
+																	</div>
+																</div>
+																<div class="rotater">
+																	<div class="btn btn-icon">
+																		<a href="#" title=""><i class="fa fa-dribbble"></i></a>
+																	</div>
+																</div>
+																<div class="rotater">
+																	<div class="btn btn-icon">
+																		<a href="#" title=""><i class="fa fa-pinterest"></i></a>
+																	</div>
+																</div>
+
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+ *@							</div>
+						</div><!-- centerl meta -->
+						<div class="col-lg-3">
+							<aside class="sidebar static right">
+								<div class="widget">
+									<h4 class="widget-title">Your page</h4>
+									<div class="your-page">
+										<figure>
+											<a href="#" title=""><img src="~/Pp/@ViewBag.User.ProfilePhoto" alt=""></a>
+										</figure>
+										<div class="page-meta">
+											<a href="/Account/ProfilePage" title="" class="underline">My page</a>
+											<span><i class="ti-comment"></i><a href="/Message/Index" title="">Messages <em>@ViewBag.MessagesCount</em></a></span>
+											<span><i class="ti-bell"></i><a href="#" title="">Notifications <em>@ViewBag.Notifications</em></a></span>
+										</div>
+										@* <div class="page-likes">
+											<ul class="nav nav-tabs likes-btn">
+												<li class="nav-item"><a class="active" href="#link1" data-toggle="tab">likes</a></li>
+												<li class="nav-item"><a class="" href="#link2" data-toggle="tab">views</a></li>
+											</ul>
+											<!-- Tab panes -->
+											<div class="tab-content">
+												<div class="tab-pane active fade show " id="link1">
+													<span><i class="ti-heart"></i>884</span>
+													<a href="#" title="weekly-likes">35 new likes this week</a>
+													<div class="users-thumb-list">
+														<a href="#" title="Anderw" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-1.jpg" alt="">
+														</a>
+														<a href="#" title="frank" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-2.jpg" alt="">
+														</a>
+														<a href="#" title="Sara" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-3.jpg" alt="">
+														</a>
+														<a href="#" title="Amy" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-4.jpg" alt="">
+														</a>
+														<a href="#" title="Ema" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-5.jpg" alt="">
+														</a>
+														<a href="#" title="Sophie" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-6.jpg" alt="">
+														</a>
+														<a href="#" title="Maria" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-7.jpg" alt="">
+														</a>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="link2">
+													<span><i class="ti-eye"></i>440</span>
+													<a href="#" title="weekly-likes">440 new views this week</a>
+													<div class="users-thumb-list">
+														<a href="#" title="Anderw" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-1.jpg" alt="">
+														</a>
+														<a href="#" title="frank" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-2.jpg" alt="">
+														</a>
+														<a href="#" title="Sara" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-3.jpg" alt="">
+														</a>
+														<a href="#" title="Amy" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-4.jpg" alt="">
+														</a>
+														<a href="#" title="Ema" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-5.jpg" alt="">
+														</a>
+														<a href="#" title="Sophie" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-6.jpg" alt="">
+														</a>
+														<a href="#" title="Maria" data-toggle="tooltip">
+															<img src="~/Tamplate/images/resources/userlist-7.jpg" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div> *@
+									</div>
+								</div><!-- page like widget -->
+
+								<div class="widget"><!--Reklam -->
+									<div class="banner medium-opacity bluesh">
+										<div class="bg-image" style="background-image: url(~/Tamplate/images/resources/baner-widgetbg.jpg)"></div>
+										<div class="baner-top">
+											<span><img alt="" src="~/Tamplate/images/book-icon.png"></span>
+											<i class="fa fa-ellipsis-h"></i>
+										</div>
+										<div class="banermeta">
+											<p>
+												create your own favourit page.
+											</p>
+											<span>like them all</span>
+											<a data-ripple="" title="" href="#">start now!</a>
+										</div>
+									</div>
+								</div>
+
+								@* <div class="widget stick-widget">
+									<h4 class="widget-title">Profile intro</h4>
+									<ul class="short-profile">
+										<li>
+											<span>about</span>
+											<p>Hi, i am jhon kates, i am 32 years old and worked as a web developer in microsoft </p>
+										</li>
+										<li>
+											<span>fav tv show</span>
+											<p>Sacred Games, Spartcus Blood, Games of Theron </p>
+										</li>
+										<li>
+											<span>favourit music</span>
+											<p>Justin Biber, Shakira, Nati Natasah</p>
+										</li>
+									</ul>
+								</div> *@
+							</aside>
+						</div><!-- sidebar -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.9.0/alertify.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+
+
+        // Gönderileri almak için AJAX çağrısını yap
+        $.ajax({
+            type: "GET",
+            url: "/User/GetPostUser",
+            success: function (posts) {
+
+                // Gönderileri sayfada görüntülemek için bir fonksiyonu çağır
+                console.log(posts)
+                renderPosts(posts);
+            },
+            error: function (error) {
+                console.log("Gönderiler alınırken hata oluştu");
+            }
+        });
+
+        // Yorumlar ve alt yorumlar için ek AJAX çağrıları buraya eklenmeli
+    });
+
+
+    function renderPosts(posts) {
+        posts.forEach(function (post) {
+            // Gönderi konteynırını oluştur
+
+
+            $.ajax({
+                type: "GET",
+                url: "/command/getLikes",
+                success: function (response) {
+                    // Kullanıcının beğendiği post ID'lerini içeren bir dizi oluştur
+                    var likedPostIds = response.map(function (like) {
+                        return like.postId;
+                    });
+
+                    var postContainer = $('<div class="central-meta item"></div>');
+
+                    var tarihNesnesi = new Date(post.created_at);
+
+                    // Tarihi düzgün bir şekilde formatlı olarak al
+                    var gun = tarihNesnesi.getDate();
+                    var ay = tarihNesnesi.getMonth() + 1; // Aylar 0-11 arasında olduğu için +1 ekleyin
+                    var yil = tarihNesnesi.getFullYear();
+                    var saat = tarihNesnesi.getHours();
+                    var dakika = tarihNesnesi.getMinutes();
+                    var saniye = tarihNesnesi.getSeconds();
+
+                    // Formatı belirle
+                    var duzgunTarih = yil + "-" + ay + "-" + gun + " " + saat + ":" + dakika + ":" + saniye;
+
+                    // Gönderiyi HTML olarak oluştur
+                    var postHtml =
+                        '<div class="user-post">' +
+
+                        '<div class="friend-info">' +
+
+                        '<figure>' +
+                        '<img style="border-radius:50%;width:75px;height:50px"  src="/PP/' + post.pp + '" alt="">' +
+                        '</figure>' +
+
+                        '<div class="friend-name">' +
+                        '<ins><a href="time-line.html" title="">' + post.userName + '</a></ins>' +
+                        '<span>' + duzgunTarih + '</span>' +
+                        '</div>' +
+
+                        '<div class="post-meta">' +
+                        '<img   src="/PostImg/' + post.imageUrl + '" alt="">' +
+                        '<div class="we-video-info">' +
+
+                        '<ul>' +
+
+                        '<li>' +
+                        '<span class="views" data-toggle="tooltip" title="Görüntüleme">' +
+                        '<i class="fa fa-eye"></i>' +
+                        '<ins>' + post.countSeen + '</ins>' +
+                        '</span>' +
+                        '</li>' +
+
+                        '<li>' +
+                        '<span class="comment" data-toggle="tooltip" title="Yorumlar">' +
+                        '<i class="fa fa-comments"></i>' +
+                        '<ins>' + post.countComment + '</ins>' +
+                        '</span>' +
+                        '</li>' +
+
+                        '<li>' +
+                        '<span id="span' + post.id + '" class="like" onclick="begenmeIslemi(' + post.id + ')" data-toggle="tooltip" title="Beğeni">' +
+                        '<i style="color:' + (likedPostIds.includes(post.id) ? 'red' : 'black') + '" class="fa fa-heart"></i>' +
+                        '<ins>' + post.countLike + '</ins>' +
+                        '</span>' +
+                        '</li>' +
+
+                        '<li >' +
+                        '<span class="dislike" data-toggle="tooltip" title="Beğenmeme">' +
+                        '<i class="ti-heart-broken"></i>' +
+                        '<ins>' + post.countDislike + '</ins>' +
+                        '</span>' +
+                        '</li>' +
+
+                        // '<li class="social-media">' +
+
+                        // '<div class="menu">' +
+
+                        // '<div class="btn trigger"><i class="fa fa-share-alt"></i></div>' +
+
+                        // '<div class="rotater">' +
+                        // '<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-html5"></i></a></div>' +
+                        // '</div>' +
+
+                        // '<div class="rotater">' +
+                        // '<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-facebook"></i></a></div>' +
+                        // '</div>' +
+
+                        // '<div class="rotater">' +
+                        // '<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-google-plus"></i></a></div>' +
+                        // '</div>' +
+
+                        // '<div class="rotater">' +
+                        // '<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-twitter"></i></a></div>' +
+                        // '</div>' +
+
+                        // '<div class="rotater">' +
+                        // '<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-css3"></i></a></div>' +
+                        // '</div>' +
+
+                        // '<div class="rotater">' +
+                        // '<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-instagram"></i></a></div>'+
+                        // '</div>' +
+
+                        // '</div>' +
+
+                        // '<div class="rotater">' +
+                        // '<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-dribbble"></i></a></div>'+
+                        // '</div>' +
+
+                        // '<div class="rotater">' +
+                        // '<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-pinterest"></i></a></div>' +
+                        // '</div>' +
+
+                        // '</div>' +
+
+                        // '</li>' +
+
+                        '</ul>' +
+                        '</div>' +
+
+                        '<div class="description">' +
+                        '<p>' + post.description + '</p>' +
+                        '</div>' +
+
+                        '</div>' +
+                        '</div>' +
+
+                        '<div class="coment-area">' +
+
+                        '<ul class="we-comet">' +
+
+                        '<li class="post-comment">' +
+                        '<div style="width:100%" class="post-comt-box">' +
+
+                        '<form class="comment-form" data-post-id="' + post.id + '">' +
+                        '<input name="PostId" value="' + post.id + '" type="hidden" />' +
+
+                        '<textarea name="Comment" placeholder="Post your comment"></textarea>' +
+
+                        
+
+                        '<div class="add-button">' +
+                        '<button style="display:block;background:gray;position: relative;float: right;margin-top: -29; type="button" onclick="submitComment(this)">Gönder</button>' +
+                        '</div>' +
+
+                        '</form>' +
+                        '</div>' +
+                        '</li>' +
+                        '</ul>' +
+                        '</div>' +
+                        '</div>';
+                    postContainer.append(postHtml);
+
+                    // Bu gönderi için yorumları görüntülemek için fonksiyonu çağır
+                    renderComments(postContainer, post.id);
+
+                    // Gönderi konteynırını ana konteynıra ekle
+                    $("#postsContainer").append(postContainer);
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX hatası:", error);
+                }
+            });
+
+
+
+
+        });
+    }
+
+
+
+
+    function renderComments(postContainer, postId) {
+        // Belirli bir gönderi için yorumları almak için AJAX çağrısını yap
+        $.ajax({
+            type: "GET",
+            url: "/Command/GetCommands?postId=" + postId,
+            success: function (comments) {
+                // Sayfada yorumları görüntülemek için bir fonksiyonu çağır
+                console.log(comments);
+                renderCommentsHtml(postContainer, postId, comments);
+            },
+            error: function (error) {
+                console.log("Yorumlar alınırken hata oluştu");
+            }
+        });
+    }
+
+    function renderCommentsHtml(postContainer, postId, comments) {
+        // Check if the comments container already exists
+        var commentsContainer = postContainer.find('.coment-area ul.we-comet');
+
+        if (commentsContainer.length === 0) {
+            // If it doesn't exist, create a new one
+            commentsContainer = $('<ul class="we-comet"></ul>');
+            postContainer.find('.coment-area').append(commentsContainer);
+            console.log('Created new comments container:', commentsContainer);
+        }
+
+        comments.forEach(function (comment) {
+            // Check if the comment with the same ID already exists
+            const existingComment = commentsContainer.find(`li[data-comment-id="${comment.id}"]`);
+            var tarihNesnesi = new Date(comment.created_at);
+
+            // Tarihi düzgün bir şekilde formatlı olarak al
+            var gun = tarihNesnesi.getDate();
+            var ay = tarihNesnesi.getMonth() + 1; // Aylar 0-11 arasında olduğu için +1 ekleyin
+            var yil = tarihNesnesi.getFullYear();
+            var saat = tarihNesnesi.getHours();
+            var dakika = tarihNesnesi.getMinutes();
+            var saniye = tarihNesnesi.getSeconds();
+
+            // Formatı belirle
+            var duzgunTarih = yil + "-" + ay + "-" + gun + " " + saat + ":" + dakika + ":" + saniye;
+
+            if (existingComment.length === 0) {
+                // Yorum HTML'ini oluştur
+                var commentHtml = '<li data-comment-id="' + comment.id + '">' +
+                    '<div class="comet-avatar">' +
+                    '<img style="border-radius:50%;width:75px;height:55px" src="/PP/' + comment.userImg + '" alt="">' +
+                    '</div>' +
+                    '<div class="we-comment ">' +
+
+                    '<div class="coment-head">' +
+                    '<h5><a href="~/Account/GetProfileFriend/' + comment.userId + '" title="">' + comment.usernmame + '</a></h5>' +
+                    '<span>' + duzgunTarih + '</span>' +
+                    '<button class="we-reply openButton" data-target="' + comment.id + '" title="Yanıtla"><i class="fa fa-reply"></i></button>' +
+
+                    // '<button class="we-reply yorumbuton" data-target="' + comment.id +  '" title="Yanıtla"><i class="fa fa-sort-desc" aria-hidden="true"></i></button>' +
+                    '</div>' +
+
+                    '<p>' + comment.comment + '</p>' +
+                    '<br />' +
+
+                    '<div class="post-comt-box" id="' + comment.id + '" style="display:none">' +
+                    '<div class="closeButton" data-target="' + comment.id + '">&times;</div>' +
+
+                    // '<form class="comment-form-child" data-comment-id="' + comment.id + '">' +
+                    // '<input name="MainYorumId" value="' + comment.id + '" type="hidden" />' +
+                    // '<textarea name="Comment" placeholder="Post your comment"></textarea>' +
+                    // '<div class="add-smiles">' +
+                    // '<span class="em em-expressionless" title="add icon"></span>' +
+                    // '</div>' +
+                    // '<div class="smiles-bunch">' +
+                    // '</div>' +
+                    // '<button style="display:block;background:red;position: relative;float: right;margin-top: -29;" type="button" onclick="submitCommentChild(this)">' +
+                    // 'Gönder' +
+                    // '</button>' +
+                    // '</form>' +
+
+                    '<form class="comment-form-child" data-post-id="' + comment.id + '">' +
+                    '<input name="MainYorumId" value="' + comment.id + '" type="hidden" />' +
+
+                    '<textarea name="Comment" placeholder="Post your comment"></textarea>' +
+
+                    '<div style="color:white;background-color:red" class="add-button">' +
+                    '<button style="display:block;background:gray;position: relative;float: right;margin-top: -29; type="button" onclick="submitCommentChild(this)">Gönder</button>' +
+                    '</div>' +
+
+                    '</form>' +
+
+                    '</div>' +
+
+                    '</div>' +
+                    '</li>';
+
+                // Yorum HTML'ini yorumlar konteynırına ekle
+                commentsContainer.prepend(commentHtml);
+
+
+                document.querySelector('.openButton[data-target="' + comment.id + '"]').addEventListener('click', function () {
+                    document.getElementById(comment.id).style.display = 'block';
+                });
+
+                document.querySelector('.closeButton[data-target="' + comment.id + '"]').addEventListener('click', function () {
+                    document.getElementById(comment.id).style.display = 'none';
+                });
+
+
+                // document.querySelector('.yorumbuton[data-target="' + comment.id + '"]').addEventListener('click', function () {
+
+
+                //     var myDiv = document.querySelector('.altyorumlar');
+                //     if (myDiv.style.display === 'none' || myDiv.style.display === '' || myDiv.id === comment.id) {
+                //         myDiv.style.display = 'block';
+                //     } else {
+                //         myDiv.style.display = 'none';
+                //     }
+                // });
+
+
+
+
+                // Bu yorum için alt yorumları görüntülemek için fonksiyonu çağır
+                renderChildComments(commentsContainer, comment.id);
+            } else {
+                console.log('Comment with the same ID already exists. Not adding again.');
+            }
+        });
+    }
+
+
+
+    function renderChildComments(commentsContainer, commentId) {
+        // Belirli bir yorum için alt yorumları almak için AJAX çağrısını yap
+        $.ajax({
+            type: "GET",
+            url: "/Command/GetCommandsChild?commentId=" + commentId,
+            success: function (childComments) {
+                // Sayfada alt yorumları görüntülemek için bir fonksiyonu çağır
+                console.log(childComments)
+                //yeniAltYorumuEkle(comment);
+                renderChildCommentsHtml(commentsContainer, commentId, childComments);
+            },
+            error: function (error) {
+                console.log("Alt yorumlar alınırken hata oluştu");
+            }
+        });
+    }
+
+    function renderChildCommentsHtml(commentsContainer, commentId, childComments) {
+        // Belirli bir yorumId için yorumlar konteynırını bul
+        var specificCommentContainer = commentsContainer.find('li[data-comment-id="' + commentId + '"]');
+
+        // Belirli bir yorum içinde alt yorumlar için bir konteynır oluştur
+        var childCommentsContainer = $('<ul class="altyorumlar" style="display:block" id="' + commentId + '" > </ul>');
+
+
+
+        // Alt yorumlar konteynırını belirli yorum konteynırına ekle
+        specificCommentContainer.append(childCommentsContainer);
+
+        childComments.forEach(function (childComment) {
+            // Alt yorum HTML'ini oluştur
+            var tarihNesnesi = new Date(childComment.created_at);
+
+            // Tarihi düzgün bir şekilde formatlı olarak al
+            var gun = tarihNesnesi.getDate();
+            var ay = tarihNesnesi.getMonth() + 1; // Aylar 0-11 arasında olduğu için +1 ekleyin
+            var yil = tarihNesnesi.getFullYear();
+            var saat = tarihNesnesi.getHours();
+            var dakika = tarihNesnesi.getMinutes();
+            var saniye = tarihNesnesi.getSeconds();
+
+            // Formatı belirle
+            var duzgunTarih = yil + "-" + ay + "-" + gun + " " + saat + ":" + dakika + ":" + saniye;
+
+            var childCommentHtml = '<li>' +
+                '<div class="comet-avatar">' +
+                '<img style="border-radius:50%;width:75px;height:55px" src="/PP/' + childComment.userImg + '" alt="">' +
+                '</div>' +
+                '<div class="we-comment">' +
+                '<div class="coment-head">' +
+                '<h5><a href="time-line.html" title="">' + childComment.usernmame + '</a></h5>' +
+                '<span>' + duzgunTarih+ '</span>' +
+                '</div>' +
+                '<p>' + childComment.comment + '</p>' +
+                '</div>' +
+                '</li>';
+
+            // Alt yorum HTML'ini alt yorumlar konteynırına ekle
+            childCommentsContainer.append(childCommentHtml);
+        });
+    }
+
+
+
+    function submitComment(button) {
+        var form = $(button).closest('.comment-form');
+        var formData = form.serialize();
+
+
+
+        $.ajax({
+            type: "POST",
+            url: "/Command/AddCommand",
+            data: formData,
+            success: function (response) {
+                alertify.success("Yorumunuz başarıyla kaydedildi.");
+                //console.log('ne geldi bakalım', response);
+
+                const postContainer = $(".central-meta.item").filter(function () {
+                    return $(this).find('.comment-form').data('post-id') === response.postId;
+                });
+                //console.log('post container', postContainer);
+                var deger = postContainer.find(".comment ins").text();
+                //console.log('text değeri:', deger);
+                //console.log('Değişken Türü:' + typeof deger);
+
+                var commentCountInt = parseInt(deger, 10);
+                commentCountInt++;
+                postContainer.find(".comment ins").text(commentCountInt); // Doğru atama burada yapılıyor
+                //console.log('değişmiş mi:', commentCountInt);
+
+                var postId = form.data('post-id');
+
+                yeniYorumuEkle(postId, response); // response içeriği yeni yorumun detaylarını içeriyorsa
+
+                form.find('textarea[name="Comment"]').val('');
+            },
+            error: function (error) {
+                alertify.error("Yorumunuz kaydedilirken bir sorun oluştu.");
+            }
+        });
+    }
+
+    function yeniYorumuEkle(postId, comment) {
+        //console.log('Trying to add a new comment:', postId, comment);
+
+        const postContainer = $(".central-meta.item").filter(function () {
+            return $(this).find('.comment-form').data('post-id') === postId;
+        });
+
+        //console.log('Post container:', postContainer);
+
+        if (postContainer.length > 0) {
+            renderCommentsHtml(postContainer, postId, [comment]); // Use renderCommentsHtml to ensure consistent
+            console.log('Comment added successfully.');
+        } else {
+            console.log('Post container not found.');
+        }
+    }
+
+
+
+    function submitCommentChild(button) {
+        var form = $(button).closest('.comment-form-child');
+        var formData = form.serialize();
+        console.log('ne geldi bakalım', form);
+
+        $.ajax({
+            type: "POST",
+            url: "/Command/AddCommandCommands",
+            data: formData,
+            success: function (response) {
+                //console.log('ne geldi bakalım', response);
+
+                var commentId = form.data('comment-id');
+
+                const postContainer = $(".central-meta.item").filter(function () {
+                    return $(this).find('.comment-form').data('post-id') === response.postId;
+                });
+                //console.log('post container', postContainer);
+                var deger = postContainer.find(".comment ins").text();
+                var commentCountInt = parseInt(deger, 10);
+                commentCountInt++;
+
+                postContainer.find(".comment ins").text(commentCountInt);
+
+                alertify.success(" Yorumunuz başarıyla kaydedildi.");
+                altyorumeklehadiartık(response, commentId);  /// response içeriği yeni yorumun detaylarını içeriyorsa
+
+                form.find('textarea[name="Comment"]').val('');
+            },
+            error: function (error) {
+                alertify.error("Yorumunuz kaydedilirken bir sorun oluştu.");
+                console.log(formData);
+                console.log(error);
+            }
+        });
+    }
+
+    function altyorumeklehadiartık(comment, mainYorumId) {
+        console.log('ne geldi bakalım', mainYorumId, comment);
+
+        const postContainer = $(".central-meta.item").filter(function () {
+            return $(this).find('.comment-form-child').data('comment-id') === mainYorumId;
+        });
+
+        // const commentContainer = postContainer.filter(function () {
+        //     return $(this).find('.comment-form-child').data('comment-id') === mainYorumId;
+        // });
+
+
+
+        console.log('Post container:', postContainer);
+        //console.log('Post container:', commentContainer);
+        //console.log('Comment container:', commentContainer);
+
+        if (postContainer.length > 0) {
+            renderChildCommentsHtml(postContainer, mainYorumId, [comment]); // Use renderCommentsHtml to ensure consistent rendering
+            console.log('Comment added successfully.');
+        } else {
+            console.log('Post container not found.');
+        }
+
+
+    }
+
+
+
+
+
+
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#publishButton").click(function () {
+            var formData = new FormData($('#postForm')[0]);
+
+            $.ajax({
+                type: 'POST',
+                url: '/Post/AddPost', // Adjust the URL based on your project structure
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (post) {
+
+
+
+                    var postContainer = $('<div class="central-meta item"></div>');
+                    var tarihNesnesi = new Date(post.created_at);
+
+                    // Tarihi düzgün bir şekilde formatlı olarak al
+                    var gun = tarihNesnesi.getDate();
+                    var ay = tarihNesnesi.getMonth() + 1; // Aylar 0-11 arasında olduğu için +1 ekleyin
+                    var yil = tarihNesnesi.getFullYear();
+                    var saat = tarihNesnesi.getHours();
+                    var dakika = tarihNesnesi.getMinutes();
+                    var saniye = tarihNesnesi.getSeconds();
+
+                    // Formatı belirle
+                    var duzgunTarih = yil + "-" + ay + "-" + gun + " " + saat + ":" + dakika + ":" + saniye;
+
+                    // Gönderiyi HTML olarak oluştur
+                    var postHtml = '<div class="user-post">' +
+                        '<div class="friend-info">' +
+                        '<figure>' +
+                        '<img style="border-radius:50%;width:75px;height:50px" src="/PP/' + post.pp + '" alt="">' +
+                        '</figure>' +
+                        '<div class="friend-name">' +
+                        '<ins><a href="time-line.html" title="">' + post.userName + '</a></ins>' +
+                        '<span>' + duzgunTarih + '</span>' +
+                        '</div>' +
+                        '<div class="post-meta">' +
+                        '<img  src="/PostImg/' + post.imageUrl + '" alt="">' +
+                        '<div class="we-video-info">' +
+                        '<ul>' +
+                        '<li>' +
+                        '<span class="views" data-toggle="tooltip" title="Görüntüleme">' +
+                        '<i class="fa fa-eye"></i>' +
+                        '<ins>' + post.countSeen + '</ins>' +
+                        '</span>' +
+                        '</li>' +
+                        '<li>' +
+                        '<span class="comment" data-toggle="tooltip" title="Yorumlar">' +
+                        '<i class="fa fa-comments"></i>' +
+                        '<ins>' + post.countComment + '</ins>' +
+                        '</span>' +
+                        '</li>' +
+                        '<li>' +
+                        '<span id="span' + post.id + '" class="like"  onclick="begenmeIslemi(' + post.id + ')" data-toggle="tooltip" title="Beğeni">' +
+                        '<i class="ti-heart"></i>' +
+                        '<ins>' + post.countLike + '</ins>' +
+                        '</span>' +
+                        '</li>' +
+                        // '<li>' +
+                        // '<span class="dislike" data-toggle="tooltip" title="Beğenmeme">' +
+                        // '<i class="ti-heart-broken"></i>' +
+                        // '<ins>' + post.countDislike + '</ins>' +
+                        // '</span>' +
+                        // '</li>' +
+                        '<li class="social-media">' +
+                        '<div class="menu">' +
+                        '<div class="btn trigger"><i class="fa fa-share-alt"></i></div>' +
+                        '<div class="rotater">' +
+                        '<div class="btn btn-icon"><a href="#" title=""><i class="fa fa-html5"></i></a></div>' +
+                        '</div>' +
+                        // ... Diğer sosyal medya simgelerinizi ekleyin ...
+                        '</div>' +
+                        '</li>' +
+                        '</ul>' +
+                        '</div>' +
+                        '<div class="description">' +
+                        '<span>' + post.description + '</span>' +
+                        '</div>' +
+                        '</div>' +
+                        '<div class="coment-area">' +
+                        '<ul class="we-comet"></ul>' +
+                        '</div>' +
+                        '</div>' +
+                        // Add the comment form below the post
+                        '<form class="comment-form" data-post-id="' + post.id + '">' +
+                        '<input name="PostId" value="' + post.id + '" type="hidden" />' +
+                        '<textarea name="Comment" placeholder="Post your comment"></textarea>' +
+
+                        '<button style="display:block;background:gray;position: relative;float: right;margin-top: -29;" type="button" onclick="submitComment(this)">' +
+                        'Gönder' +
+                        '</button>' +
+                        '</form>' +
+                        '</div>';
+
+                    postContainer.append(postHtml);
+                    $('#postsContainer').prepend(postContainer);
+                    $('#silinecek').val("");
+
+                    alertify.success("Başarıyla Kaydedildi");
+
+                },
+                error: function (error) {
+                    // Handle error, display an alert or show an error message
+                    alert('Error: ' + error.responseText);
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    function begenmeIslemi(postId) {
+        $.ajax({
+            type: "post",
+            url: "/command/postLike/" + postId,
+            success: function (response) {
+                var postElement = $('#span' + postId);
+                var likeCountIns = postElement.find('ins');
+                var heartIcon = postElement.find('i');
+
+                // Önceki beğeni sayısını alın
+                var previousLikeCount = parseInt(likeCountIns.text());
+
+                // Beğeni sayısını güncelleyin
+                likeCountIns.text(response.countLike);
+
+                // Eğer beğeni sayısı arttıysa kalbin rengini kırmızıya çevirin, aksi takdirde siyah yapın
+                if (response.countLike > previousLikeCount) {
+                    heartIcon.css('color', 'red');
+                } else {
+                    heartIcon.css('color', 'black');
+                }
+            },
+            error: function (error) {
+                console.error("Hata:", error);
+            }
+        });
+    }
+
+
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        $(".add-smiles").click(function () {
+            var x = $(this).attr("id");
+            console.log(x);
+            if ($(".smiles-bunch#" + x).css("display") === "none") {
+                $(".smiles-bunch#" + x).css("display", "block");
+            } else {
+                $(".smiles-bunch#" + x).css("display", "none");
+            }
+        });
+    });
+
+</script>
+
